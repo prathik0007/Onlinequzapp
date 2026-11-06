@@ -1,0 +1,24 @@
+{
+  "name": "online-quiz-application-root",
+  "version": "1.0.0",
+  "description": "MCA Individual Micro Project - Full Stack Online Quiz Application using MERN, GraphQL and Native Fetch API",
+  "private": true,
+  "scripts": {
+    "server": "npm run dev --prefix backend",
+    "client": "npm run dev --prefix frontend",
+    "build:client": "npm run build --prefix frontend",
+    "seed": "npm run seed --prefix backend"
+  },
+  "keywords": [
+    "react",
+    "graphql",
+    "express",
+    "mongodb",
+    "mongoose",
+    "fetch-api",
+    "mca-micro-project"
+  ],
+  "author": "MCA Student",
+  "license": "ISC"
+}
+

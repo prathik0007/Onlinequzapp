@@ -60,3 +60,4 @@ const quizResultSchema = new mongoose.Schema({
 const QuizResult = mongoose.model('QuizResult', quizResultSchema);
 
 export default QuizResult;
+
