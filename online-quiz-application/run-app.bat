@@ -1,5 +1,5 @@
 @echo off
-TITLE Launch Online Quiz Application (MCA Micro Project)
+TITLE Launch Online Quiz Application
 echo ========================================================
 echo   Launching Online Quiz Application (MERN + GraphQL)
 echo ========================================================

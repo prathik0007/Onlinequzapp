@@ -91,17 +91,6 @@ function App() {
           />
         )}
       </main>
-
-      <footer className="footer">
-        <div className="container">
-          <p>
-            <strong>Online Quiz Application</strong> &bull; MCA Individual Micro Project
-          </p>
-          <p style={{ marginTop: '0.25rem', fontSize: '0.8rem' }}>
-            Built with React, Express, GraphQL, MongoDB &amp; Native Fetch API
-          </p>
-        </div>
-      </footer>
     </div>
   );
 }

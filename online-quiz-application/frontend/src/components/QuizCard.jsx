@@ -9,7 +9,7 @@ const QuizCard = ({ quiz, onStartQuiz }) => {
   return (
     <div className="quiz-card">
       <div className="quiz-card-header">
-        <span className="quiz-badge">MCA Micro Project</span>
+        <span className="quiz-badge">Online Quiz</span>
         <h3 className="quiz-card-title">{quiz.title}</h3>
         <p className="quiz-card-desc">{quiz.description}</p>
       </div>

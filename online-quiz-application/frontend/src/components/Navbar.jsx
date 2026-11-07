@@ -12,7 +12,6 @@ const Navbar = ({ activeView, onNavigate }) => {
           <div className="brand-icon">🎓</div>
           <div className="brand-text">
             <h1>QuizMaster</h1>
-            <span>MCA Micro Project &bull; MERN + GraphQL</span>
           </div>
         </div>
 
