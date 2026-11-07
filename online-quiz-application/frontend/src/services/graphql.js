@@ -1,7 +1,7 @@
 // Reusable GraphQL Service using Native JavaScript Fetch API
 // Strictly satisfies Project Requirement 6 (No Apollo Client, No Axios)
-
-const GRAPHQL_ENDPOINT = import.meta.env.VITE_GRAPHQL_URI || 'http://localhost:5000/graphql';
+// Defaults to /graphql which works with Vite proxy and direct hosting
+const GRAPHQL_ENDPOINT = import.meta.env.VITE_GRAPHQL_URI || '/graphql';
 
 /**
  * Core reusable function that sends GraphQL requests via native fetch()

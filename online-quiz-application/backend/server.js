@@ -3,6 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import { ApolloServer } from '@apollo/server';
 import { expressMiddleware } from '@apollo/server/express4';
+import { ApolloServerPluginLandingPageLocalDefault } from '@apollo/server/plugin/landingPage/default';
 
 import connectDB from './config/db.js';
 import typeDefs from './graphql/schema.js';
@@ -18,10 +19,13 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-// Initialize Apollo Server
+// Initialize Apollo Server with embedded GraphQL IDE Sandbox
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  plugins: [
+    ApolloServerPluginLandingPageLocalDefault({ embed: true })
+  ],
   formatError: (formattedError) => {
     console.error('[GraphQL Error]:', formattedError.message);
     return {
